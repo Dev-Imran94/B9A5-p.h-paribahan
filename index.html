@@ -127,8 +127,12 @@
             <br>
             <!-- coach section -->
             <div class="ml-10 max-w-fit">
-                <h1>Programming Hero Paribahan</h1>
-                <p>Coach-009-WEB ! AC_Business</p>
+                <div class="flex gap-x-4">
+                    <img class="w-14" src="images/bus-logo.png" alt="">
+                    <h1 class="font-bold text-2xl">Programming Hero Paribahan</h1>
+                </div>
+                <p class="ml-16">Coach-009-WEB ! AC_Business</p>
+
                 <div class="font-semibold rounded bg-[#1DD10026] max-w-fit ml-96">
                     <h4 class="text-[#1DD100]"><i class="fa-solid fa-chair"> &nbsp </i>40 Seats Left</h4>
                 </div>
@@ -148,8 +152,17 @@
         </section>
 
         <!-- select your seat section -->
+
         <section class=" mt-6 ml-10">
-            <div class=" flex grid-cols-2 gap-x-8 gap-y-8">
+            <h2 class="font-bold">Select Your Seat</h2> <br>
+            <hr> <br>
+            <div class="flex gap-x-32 font-semibold">
+                <p class="text-gray-500"> <i class="fa-solid fa-chair"></i> &nbsp;Available</p>
+                <p class="text-green-400"> <i class="fa-solid fa-chair"></i> &nbsp;Selected</p>
+            </div>
+             <br>
+             <hr>
+            <div class="flex grid-cols-2 gap-x-8 gap-y-8 font-semibold">
                 <ul>
                     <li>A</li>
                     <li>B</li>
@@ -163,7 +176,7 @@
                     <li>J</li>
                 </ul>
                 <ul>
-                    <li>A1</li>
+                    <li class=" hover:bg-green-500 h-10 w-12 bg-[#F7F8F8] rounded">A1</li>
                     <li>B1</li>
                     <li>C1</li>
                     <li>D1</li>
@@ -239,29 +252,49 @@
                 </tbody>
             </table>
             <br>
-            <div>
+            <div class="flex font-semibold justify-between max-w-64">
                 <p>Total Price</p>
                 <p>BDT 1100</p>
             </div>
+            <br>
+            <input type="text" placeholder="Have Any Coupon?" class="input input-bordered input-accent w-full max-w-64" />
+            <br><br>
+            <button class="btn text-white bg-[#1DD100] btn-sm">Apply</button>
+            <br> <br>
+            <div class="flex font-semibold justify-between max-w-64">
+                <p>Grand Total</p>
+                <p>BDT 1100</p>
+            </div>
+
         </section>
         <!-- passenger info -->
-        <section class=" ml-8 mt-8 max-w-60">
-            <label class="input input-bordered flex items-center gap-2">
+        <section class=" ml-8 mt-8 max-w-64">
+            <label class="font-semibold" for="">Passenger Name*</label>
+            <label class="input input-bordered flex items-center gap-2"> 
                 <input type="text" class="text" placeholder="Enter Your Name" />
             </label>
             <br>
+            <label class="font-semibold" for="">Phone Number*</label>
             <label class="input input-bordered flex items-center gap-2">
                 <input type="number" name="" id="" placeholder="Enter Your Mobile No">
             </label>
             <br>
+            <label class="font-semibold" for="">Email ID</label>
             <label class="input input-bordered flex items-center gap-2">
                 <input type="text" class="grow" placeholder="Enter Your Email" />
             </label>
+            <br>
+            <button class="btn btn-wide text-white bg-[#1DD100]">Next</button>
+            <br> <br>
+            <div class="flex justify-around text-sm">
+                <p>Trams & Conditions</p>
+                <p>Cancellation Policy</p>
+            </div>
         </section>
     </main>
     <footer>
         <footer class="footer p-2 mt-8 bg-[#000000] rounded text-white">
-            <h1 class="font-bold text-2xl">Programming Hero Paribahan</h1>
+            <h1 class="font-bold text-1xl">Programming Hero Paribahan</h1>
             <p>P-Ticket is a digital platform to make your daily commuting better.</p>
             <nav class="flex gap-4">
                 <a class="link link-hover">Terms & condition</a>
@@ -269,7 +302,7 @@
                 <a class="link link-hover">Privacy policy</a>
             </nav>
             <aside>
-                <p>Copyright © 2024 - All right reserved by Programming Hero Paribahan</p>
+                <p>Copyright © 2024 - All right reserved by Programming Hero Paribahan Ltd.</p>
             </aside>
         </footer>
 
