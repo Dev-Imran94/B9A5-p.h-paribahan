@@ -7,6 +7,8 @@ function booking(){
     hideElementById('success-modal');
 }
 
-function setBackgroundColorById(elementId) {
-    
+function eBooking(){
+    setBackgroundColorById(elementId);
+    eBooking(); 
 }
+
